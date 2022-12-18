@@ -1,0 +1,58 @@
+{
+  "name": "fiba-react-components",
+  "version": "0.0.2",
+  "description": "Atomic react components for your next project.",
+  "license": "MIT",
+  "author": "Filip Balada",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:flpbalada/fiba-react-components.git"
+  },
+  "keywords": [
+    "react",
+    "atomic",
+    "components"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/fiba.es.js",
+      "require": "./dist/fiba.umd.js"
+    }
+  },
+  "main": "./dist/fiba.umd.js",
+  "module": "./dist/fiba.es.js",
+  "types": "./dist/main.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@vitejs/plugin-react": "^3.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-next": "13.0.6",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.6",
+    "typescript": "*",
+    "vite": "^4.0.0",
+    "vite-plugin-dts": "^1.7.1",
+    "vite-plugin-static-copy": "^0.13.0",
+    "vite-tsconfig-paths": "^4.0.3"
+  }
+}
