@@ -6,5 +6,6 @@ import { Filler as FFiller } from './atomic/filler.component'
 import { Hero as FHero } from './atomic/hero.component'
 import { Perex as FPerex } from './atomic/perex.component'
 import { Section as FSection } from './atomic/section.component'
+import { GlobalStyles as FGlobalStyles } from './theme/global-styles.component'
 
-export { FButton, FTheme, FBox, FContainer, FFiller, FHero, FPerex, FSection }
+export { FButton, FTheme, FBox, FContainer, FFiller, FHero, FPerex, FSection, FGlobalStyles }
