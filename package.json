@@ -1,6 +1,6 @@
 {
   "name": "fiba-react-components",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Atomic react components for your next project.",
   "license": "MIT",
   "author": "Filip Balada",
@@ -30,9 +30,9 @@
   "scripts": {
     "build": "tsc && vite build"
   },
-	"dependencies": {
-		"styled-components": "^5.3.6"
-	},
+  "dependencies": {
+    "styled-components": "^5.3.6"
+  },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
