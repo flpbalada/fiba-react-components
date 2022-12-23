@@ -6,7 +6,16 @@ import { shadows } from './shadows.const'
 
 // ? https://medium.com/rbi-tech/theme-with-styled-components-and-typescript-209244ec15a3
 
-const defaultTheme: DefaultTheme = {
+interface ThemeConfiguration extends DefaultTheme {
+	colors: typeof colors
+	sizes: typeof sizes
+	devices: typeof devices
+	shadows: typeof shadows
+}
+
+export type { ThemeConfiguration }
+
+const defaultTheme: ThemeConfiguration = {
 	colors: colors,
 	sizes: sizes,
 	devices: devices,
@@ -15,7 +24,7 @@ const defaultTheme: DefaultTheme = {
 
 type Props = {
 	children: JSX.Element
-	theme?: DefaultTheme
+	theme?: ThemeConfiguration
 }
 
 const Theme = (props: Props) => {
