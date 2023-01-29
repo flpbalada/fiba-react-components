@@ -1,16 +1,18 @@
 import { useCallback } from 'react'
 import styled from 'styled-components'
 
-const ButtonWrapper = styled.a<{ isSecondary: boolean }>`
+const ButtonWrapper = styled.button<{ isSecondary: boolean }>`
 	display: flex;
 	padding: ${props => props.theme.sizes[16]};
 	background-color: ${props => (props.isSecondary ? props.theme.colors.secondary : props.theme.colors.primary)};
 	border: none;
 	border-radius: ${props => props.theme.sizes[8]};
+	font-style: none;
 	font-weight: 700;
 	&:hover {
 		cursor: pointer;
 		box-shadow: ${props => props.theme.shadows.medium};
+		outline: none;
 	}
 `
 
