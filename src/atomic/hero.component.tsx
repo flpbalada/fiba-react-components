@@ -11,14 +11,14 @@ const Hero1 = styled.h1`
 	font-size: ${props => props.theme.sizes[32]};
 `
 
-const Hero2 = styled.h1`
+const Hero2 = styled.h2`
 	${heroSharedStyles}
-	font-size: ${props => props.theme.sizes[24]};
+	font-size: ${props => props.theme.sizes[20]};
 `
 
-const Hero3 = styled.h1`
+const Hero3 = styled.h3`
 	${heroSharedStyles}
-	font-size: ${props => props.theme.sizes[16]};
+	font-size: ${props => props.theme.sizes[18]};
 `
 
 const variants = {
