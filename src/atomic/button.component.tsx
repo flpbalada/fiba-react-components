@@ -7,7 +7,7 @@ const ButtonWrapper = styled.button<{ isSecondary: boolean }>`
 	background-color: ${props => (props.isSecondary ? props.theme.colors.secondary : props.theme.colors.primary)};
 	border: none;
 	border-radius: ${props => props.theme.sizes[8]};
-	font-style: none;
+	text-decoration: none;
 	font-weight: 700;
 	&:hover {
 		cursor: pointer;
